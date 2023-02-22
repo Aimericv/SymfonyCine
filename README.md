@@ -13,3 +13,11 @@ php bin/console make:entity
 Update :
 
 symfony console doctrine:schema:update --force
+
+Montre les propriétés de la route :
+
+symfony console debug:router "nom d'une route"
+
+
+
+
