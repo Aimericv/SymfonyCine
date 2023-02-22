@@ -329,7 +329,7 @@ class MovieController extends AbstractController
      */
     public function getMovie( int $idMovie ): Response
     {
-
+      $movie_key = array_search( $idMovie, array_column($this->_movies, 'id'));
       
       if ($idMovie>14){
         
@@ -339,7 +339,10 @@ class MovieController extends AbstractController
       }
         return $this->render('movie/get.html.twig', [
             'movie'=>$this->_movies[ $idMovie ]
+            
         ]);
+
+      
         
     }
 
