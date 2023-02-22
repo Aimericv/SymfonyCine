@@ -1,0 +1,10 @@
+<h1> Liste des films</h1>
+
+<ul>
+    {% for movie in movies %}
+    <li>{{movie.original_title}}</li>
+        <li>{{movie.id}}</li>
+        <img src="https://image.tmdb.org/t/p/w500{{movie.poster_path}} "height="352" width="300" />
+        
+    {% endfor %}
+</ul>

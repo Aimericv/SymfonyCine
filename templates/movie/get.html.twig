@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} Fiche du file ... {% endblock %}
+
+{% block body%}
+<h1>On va afficher la fiche du film</h1>
+
+
+
+<br><b>{{movie.title}}</b></br>
+<img src="https://image.tmdb.org/t/p/w500{{movie.poster_path}} "height="352" width="300" />
+
+
+
+
+{% endblock %}
